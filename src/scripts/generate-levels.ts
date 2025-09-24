@@ -168,6 +168,7 @@ if (import.meta.main) {
     console.log('  bun run src/scripts/generate-levels.ts --batch  # Generate 14 sample levels');
     console.log('  bun run src/scripts/generate-levels.ts --custom # Generate 1 custom level');
     console.log('\nGenerated files will be saved to ./generated-levels/');
+    console.log('An index of generated levels is maintained at generated-levels/index.json');
   }
 }
 

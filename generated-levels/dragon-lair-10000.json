@@ -1,7 +1,7 @@
 {
   "id": "dragon-lair",
   "name": "Dragon Lair",
-  "description": "A dark cave system teeming with underground creatures.",
+  "description": "A mysterious dungeon complex with hidden dangers.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 5,
@@ -865,10 +865,28 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards",
-    "Interact with environmental features"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    },
+    {
+      "id": "interact-features",
+      "type": "interact",
+      "description": "Interact with environmental features",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -878,5 +896,16 @@
     "exploration"
   ],
   "difficulty": "hard",
-  "theme": "dungeon"
+  "theme": "dungeon",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 10000,
+    "algorithm": "bsp",
+    "compressedSize": 74.24,
+    "generationTime": 0
+  }
 }

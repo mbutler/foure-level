@@ -1,7 +1,7 @@
 {
   "id": "arcane-sanctum",
   "name": "Arcane Sanctum",
-  "description": "Mystical sanctum pulsing with arcane energy.",
+  "description": "Magical convergence of ancient powers.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 3,
@@ -915,11 +915,34 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Use terrain for cover and tactical positioning",
-    "Avoid environmental hazards",
-    "Interact with environmental features"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "use-cover",
+      "type": "tactics",
+      "description": "Use terrain for cover and tactical positioning",
+      "optional": true
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    },
+    {
+      "id": "interact-features",
+      "type": "interact",
+      "description": "Interact with environmental features",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -929,5 +952,16 @@
     "ritual"
   ],
   "difficulty": "medium",
-  "theme": "mystical"
+  "theme": "mystical",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 88888,
+    "algorithm": "mixed",
+    "compressedSize": 70.88,
+    "generationTime": 0
+  }
 }

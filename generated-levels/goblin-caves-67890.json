@@ -1,7 +1,7 @@
 {
   "id": "goblin-caves",
   "name": "Goblin Caves",
-  "description": "A mysterious dungeon complex with hidden dangers.",
+  "description": "A dark cave system teeming with underground creatures.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 2,
@@ -748,12 +748,12 @@
       "y": 8
     },
     {
-      "x": 20,
-      "y": 5
+      "x": 21,
+      "y": 13
     },
     {
-      "x": 5,
-      "y": 12
+      "x": 19,
+      "y": 18
     }
   ],
   "environmentalEffects": [
@@ -857,9 +857,22 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -869,5 +882,16 @@
     "exploration"
   ],
   "difficulty": "medium",
-  "theme": "dungeon"
+  "theme": "dungeon",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 67890,
+    "algorithm": "cellular",
+    "compressedSize": 72.8,
+    "generationTime": 1
+  }
 }

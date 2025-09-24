@@ -1,7 +1,7 @@
 {
   "id": "swamp-ruins",
   "name": "Swamp Ruins",
-  "description": "Dense forest wilderness with natural hazards.",
+  "description": "Untamed wilds where nature reigns supreme.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 2,
@@ -801,9 +801,22 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -813,5 +826,16 @@
     "nature"
   ],
   "difficulty": "medium",
-  "theme": "wilderness"
+  "theme": "wilderness",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 33333,
+    "algorithm": "template",
+    "compressedSize": 59.2,
+    "generationTime": 0
+  }
 }

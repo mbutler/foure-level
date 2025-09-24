@@ -1,7 +1,7 @@
 {
   "id": "lich-tower",
   "name": "Lich Tower",
-  "description": "Mystical sanctum pulsing with arcane energy.",
+  "description": "A realm where magic bends reality.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 4,
@@ -924,11 +924,34 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Use terrain for cover and tactical positioning",
-    "Avoid environmental hazards",
-    "Interact with environmental features"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "use-cover",
+      "type": "tactics",
+      "description": "Use terrain for cover and tactical positioning",
+      "optional": true
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    },
+    {
+      "id": "interact-features",
+      "type": "interact",
+      "description": "Interact with environmental features",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -938,5 +961,16 @@
     "ritual"
   ],
   "difficulty": "hard",
-  "theme": "mystical"
+  "theme": "mystical",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 20000,
+    "algorithm": "mixed",
+    "compressedSize": 63.52,
+    "generationTime": 0
+  }
 }

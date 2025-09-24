@@ -1,7 +1,7 @@
 {
   "id": "crystal-mines",
   "name": "Crystal Mines",
-  "description": "Deep underground caverns with crystal formations.",
+  "description": "Crystal-lit caves with mysterious properties.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 2,
@@ -735,16 +735,16 @@
       "y": 2
     },
     {
-      "x": 14,
-      "y": 5
-    },
-    {
       "x": 13,
-      "y": 12
+      "y": 3
     },
     {
-      "x": 14,
-      "y": 18
+      "x": 12,
+      "y": 11
+    },
+    {
+      "x": 19,
+      "y": 5
     }
   ],
   "environmentalEffects": [
@@ -788,10 +788,28 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards",
-    "Interact with environmental features"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    },
+    {
+      "id": "interact-features",
+      "type": "interact",
+      "description": "Interact with environmental features",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -801,5 +819,16 @@
     "mining"
   ],
   "difficulty": "medium",
-  "theme": "underground"
+  "theme": "underground",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 44444,
+    "algorithm": "cellular",
+    "compressedSize": 77.92,
+    "generationTime": 1
+  }
 }

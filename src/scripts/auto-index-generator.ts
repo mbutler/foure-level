@@ -78,7 +78,7 @@ function generateLevelsIndex(): void {
 
   try {
     const files = readdirSync(levelsDir);
-    const jsonFiles = files.filter(file => file.endsWith('.json'));
+    const jsonFiles = files.filter(file => file.endsWith('.json') && !['levels-index.json', 'index.json'].includes(file));
 
     console.log(`📁 Found ${jsonFiles.length} JSON files`);
 
@@ -157,7 +157,7 @@ function generateLevelsIndex(): void {
     };
 
     // Write index file
-    const indexPath = join(levelsDir, 'levels-index.json');
+    const indexPath = join(levelsDir, 'index.json');
     writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf8');
 
     console.log('\n✅ Index generated successfully!');
@@ -238,7 +238,7 @@ function validateAllLevels(): void {
 
   try {
     const files = readdirSync(levelsDir);
-    const jsonFiles = files.filter(file => file.endsWith('.json'));
+    const jsonFiles = files.filter(file => file.endsWith('.json') && !['levels-index.json', 'index.json'].includes(file));
 
     let validCount = 0;
     let invalidCount = 0;

@@ -15,13 +15,47 @@
         "underground",
         "exploration"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "goblin-cave",
+      "name": "Goblin Cave",
+      "description": "A dark cave infested with goblins. Perfect for beginning adventurers.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 45,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": [
+        "cave",
+        "goblins",
+        "beginner",
+        "underground"
+      ],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "haunted-mansion",
+      "name": "Haunted Mansion",
+      "description": "Map test",
+      "recommendedLevel": 1,
+      "estimatedDuration": 45,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": [
+        "cave",
+        "goblins",
+        "beginner",
+        "underground"
+      ],
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "ancient-tombs",
       "name": "Ancient Tombs",
-      "description": "Ancient caverns that have claimed many adventurers.",
+      "description": "A dark cave system teeming with underground creatures.",
       "recommendedLevel": 3,
       "estimatedDuration": 105,
       "difficulty": "medium",
@@ -33,7 +67,7 @@
         "underground",
         "exploration"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
@@ -51,13 +85,13 @@
         "underground",
         "exploration"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "dragon-lair",
       "name": "Dragon Lair",
-      "description": "Ancient caverns that have claimed many adventurers.",
+      "description": "A mysterious dungeon complex with hidden dangers.",
       "recommendedLevel": 5,
       "estimatedDuration": 135,
       "difficulty": "hard",
@@ -69,7 +103,7 @@
         "underground",
         "exploration"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
@@ -87,7 +121,7 @@
         "arcane",
         "ritual"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
@@ -105,13 +139,13 @@
         "arcane",
         "ritual"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "lich-tower",
       "name": "Lich Tower",
-      "description": "Magical convergence of ancient powers.",
+      "description": "A realm where magic bends reality.",
       "recommendedLevel": 4,
       "estimatedDuration": 120,
       "difficulty": "hard",
@@ -123,7 +157,7 @@
         "arcane",
         "ritual"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
@@ -141,13 +175,13 @@
         "deep",
         "mining"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "deep-caverns",
       "name": "Deep Caverns",
-      "description": "Crystal-lit caves with mysterious properties.",
+      "description": "Deep underground caverns with crystal formations.",
       "recommendedLevel": 3,
       "estimatedDuration": 105,
       "difficulty": "medium",
@@ -159,13 +193,13 @@
         "deep",
         "mining"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "city-streets",
       "name": "City Streets",
-      "description": "Urban decay where shadows come alive.",
+      "description": "Forgotten district reclaimed by darkness.",
       "recommendedLevel": 1,
       "estimatedDuration": 75,
       "difficulty": "easy",
@@ -177,13 +211,13 @@
         "buildings",
         "streets"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "abandoned-district",
       "name": "Abandoned District",
-      "description": "Urban decay where shadows come alive.",
+      "description": "Abandoned city streets with lurking dangers.",
       "recommendedLevel": 2,
       "estimatedDuration": 90,
       "difficulty": "medium",
@@ -195,13 +229,13 @@
         "buildings",
         "streets"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
       "id": "forest-ambush",
       "name": "Forest Ambush",
-      "description": "Dense forest wilderness with natural hazards.",
+      "description": "A dangerous forest filled with wild creatures.",
       "recommendedLevel": 1,
       "estimatedDuration": 75,
       "difficulty": "easy",
@@ -213,7 +247,24 @@
         "outdoor",
         "nature"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "bandit-camp",
+      "name": "Bandit Camp",
+      "description": "A wilderness encounter with bandits who have set up camp in the forest.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 60,
+      "difficulty": "medium",
+      "theme": "wilderness",
+      "tags": [
+        "bandits",
+        "forest",
+        "camp",
+        "outdoor"
+      ],
+      "author": "FOURE Team",
       "version": "1.0.0"
     },
     {
@@ -231,12 +282,12 @@
         "outdoor",
         "nature"
       ],
-      "author": "FOURE Level Generator",
+      "author": "FOURE Team",
       "version": "1.0.0"
     }
   ],
-  "generatedAt": "2025-09-24T02:55:29.812Z",
-  "totalLevels": 13,
+  "generatedAt": "2025-09-24T20:25:43.740Z",
+  "totalLevels": 16,
   "metadata": {
     "generatorVersion": "1.0.0",
     "formatVersion": "1.0.0",

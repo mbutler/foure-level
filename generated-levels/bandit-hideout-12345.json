@@ -1,7 +1,7 @@
 {
   "id": "bandit-hideout",
   "name": "Bandit Hideout",
-  "description": "Ancient caverns that have claimed many adventurers.",
+  "description": "A dark cave system teeming with underground creatures.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 1,
@@ -865,10 +865,28 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards",
-    "Interact with environmental features"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    },
+    {
+      "id": "interact-features",
+      "type": "interact",
+      "description": "Interact with environmental features",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -878,5 +896,16 @@
     "exploration"
   ],
   "difficulty": "easy",
-  "theme": "dungeon"
+  "theme": "dungeon",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 12345,
+    "algorithm": "bsp",
+    "compressedSize": 70.08,
+    "generationTime": 1
+  }
 }

@@ -1,0 +1,52 @@
+{
+  "levels": [
+    {
+      "id": "goblin-cave",
+      "name": "Goblin Cave",
+      "description": "A dark cave infested with goblins. Perfect for beginning adventurers.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 45,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": ["cave", "goblins", "beginner", "underground"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "bandit-camp",
+      "name": "Bandit Camp",
+      "description": "A wilderness encounter with bandits who have set up camp in the forest.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 60,
+      "difficulty": "medium",
+      "theme": "wilderness",
+      "tags": ["bandits", "forest", "camp", "outdoor"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "haunted-mansion",
+      "name": "Haunted Mansion",
+      "description": "An abandoned mansion filled with undead creatures and dark magic.",
+      "recommendedLevel": 4,
+      "estimatedDuration": 90,
+      "difficulty": "hard",
+      "theme": "dungeon",
+      "tags": ["undead", "mansion", "haunted", "magic"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "dragon-lair",
+      "name": "Dragon's Lair",
+      "description": "The lair of an ancient red dragon. Only for the most experienced adventurers.",
+      "recommendedLevel": 10,
+      "estimatedDuration": 120,
+      "difficulty": "epic",
+      "theme": "dungeon",
+      "tags": ["dragon", "lair", "epic", "treasure"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    }
+  ]
+}

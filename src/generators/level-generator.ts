@@ -11,6 +11,7 @@ import { EncounterBalancer, MonsterStats } from './encounter-balancer.js';
 import { MapCompression } from '../utils/map-compression.js';
 import { TERRAIN_PALETTES, TERRAIN_TYPES, TerrainUtils } from '../types/terrain.js';
 import { CompressedMapData } from '../utils/map-compression.js';
+import { LevelObjective } from '../types/level-schema.js';
 
 /**
  * Complete generated level data
@@ -34,7 +35,7 @@ export interface GeneratedLevel {
   readonly startingActors: MonsterStats[];
   readonly playerSpawnPoints: Array<{ x: number; y: number }>;
   readonly environmentalEffects: any[];
-  readonly objectives: string[];
+  readonly objectives: LevelObjective[];
   readonly tags: string[];
   readonly difficulty: string;
   readonly theme: string;
@@ -137,7 +138,18 @@ export class LevelGenerator {
       objectives: this.generateObjectives(terrain, []),
       tags: this.generateLevelTags(),
       difficulty: this.getDifficultyName(difficultyLevel),
-      theme: this.config.theme
+      theme: this.config.theme,
+      settings: {
+        allowRespawn: false,
+        timeLimit: 90,
+        maxPlayers: playerCount
+      },
+      metadata: {
+        seed: this.config.seed,
+        algorithm: this.config.algorithm,
+        compressedSize: Number(compressionStats.compressionRatio.toFixed(2)),
+        generationTime
+      }
     };
   }
 
@@ -189,43 +201,80 @@ export class LevelGenerator {
   /**
    * Generate encounter objectives based on terrain and monsters
    */
-  private generateObjectives(terrain: string[][], monsters: any[]): string[] {
-    const objectives: string[] = [];
+  private generateObjectives(terrain: string[][], monsters: any[]): LevelObjective[] {
+    const objectives: LevelObjective[] = [];
 
     // Primary objective - will be set by game engine when monsters are added
     if (monsters.length > 0) {
-      objectives.push(`Defeat ${monsters.length} hostile creatures`);
+      objectives.push({
+        id: 'defeat-hostiles',
+        type: 'eliminate',
+        description: `Defeat ${monsters.length} hostile creatures`
+      });
 
       // Secondary objectives based on monster roles
       const elites = monsters.filter(m => m.role === 'elite').length;
       if (elites > 0) {
-        objectives.push(`Eliminate the elite threats first`);
+        objectives.push({
+          id: 'eliminate-elites',
+          type: 'eliminate',
+          description: 'Eliminate the elite threats first',
+          optional: true
+        });
       }
 
       const solos = monsters.filter(m => m.role === 'solo').length;
       if (solos > 0) {
-        objectives.push(`Focus fire on the boss creature`);
+        objectives.push({
+          id: 'focus-boss',
+          type: 'eliminate',
+          description: 'Focus fire on the boss creature',
+          optional: true
+        });
       }
     } else {
       // No monsters - exploration objectives
-      objectives.push(`Explore the area`);
-      objectives.push(`Survive the environment`);
+      objectives.push({
+        id: 'explore-area',
+        type: 'explore',
+        description: 'Explore the area'
+      });
+      objectives.push({
+        id: 'survive-environment',
+        type: 'survive',
+        description: 'Survive the environment'
+      });
     }
 
     // Terrain-based objectives
     const hasCover = terrain.some(row => row.some(cell => ['ruins', 'mushrooms'].includes(cell)));
     if (hasCover) {
-      objectives.push(`Use terrain for cover and tactical positioning`);
+      objectives.push({
+        id: 'use-cover',
+        type: 'tactics',
+        description: 'Use terrain for cover and tactical positioning',
+        optional: true
+      });
     }
 
     const hasHazards = terrain.some(row => row.some(cell => ['pit', 'lava', 'water'].includes(cell)));
     if (hasHazards) {
-      objectives.push(`Avoid environmental hazards`);
+      objectives.push({
+        id: 'avoid-hazards',
+        type: 'hazard',
+        description: 'Avoid environmental hazards',
+        optional: true
+      });
     }
 
     const hasInteractive = terrain.some(row => row.some(cell => ['altar', 'crystal', 'portal'].includes(cell)));
     if (hasInteractive) {
-      objectives.push(`Interact with environmental features`);
+      objectives.push({
+        id: 'interact-features',
+        type: 'interact',
+        description: 'Interact with environmental features',
+        optional: true
+      });
     }
 
     return objectives;

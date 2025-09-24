@@ -6,6 +6,7 @@
  */
 
 import { TERRAIN_TYPES } from '../types/terrain.js';
+import { LevelObjective } from '../types/level-schema.js';
 
 /**
  * Validation error interface
@@ -38,7 +39,7 @@ export interface LevelValidationSchema {
   readonly startingActors: any[];
   readonly playerSpawnPoints: Array<{ x: number; y: number }>;
   readonly environmentalEffects: any[];
-  readonly objectives: string[];
+  readonly objectives: LevelObjective[];
   readonly tags: string[];
   readonly difficulty: string;
   readonly theme: string;
@@ -335,8 +336,37 @@ export class LevelValidator {
       this.addError('objectives', 'objectives must be an array');
     } else {
       for (let i = 0; i < levelData.objectives.length; i++) {
-        if (typeof levelData.objectives[i] !== 'string') {
-          this.addError('objectives', `Objective ${i} must be a string`);
+        const objective = levelData.objectives[i];
+        if (!objective || typeof objective !== 'object' || Array.isArray(objective)) {
+          this.addError('objectives', `Objective ${i} must be an object`);
+          continue;
+        }
+
+        const requiredFields: Array<keyof LevelObjective> = ['id', 'type', 'description'];
+        requiredFields.forEach(field => {
+          if (!(field in objective)) {
+            this.addError('objectives', `Objective ${i} missing required field '${field}'`);
+          }
+        });
+
+        if (objective.id && typeof objective.id !== 'string') {
+          this.addError('objectives', `Objective ${i} field 'id' must be a string`);
+        }
+
+        if (objective.type && typeof objective.type !== 'string') {
+          this.addError('objectives', `Objective ${i} field 'type' must be a string`);
+        }
+
+        if (objective.description && typeof objective.description !== 'string') {
+          this.addError('objectives', `Objective ${i} field 'description' must be a string`);
+        }
+
+        if (objective.target && typeof objective.target !== 'string') {
+          this.addError('objectives', `Objective ${i} field 'target' must be a string`);
+        }
+
+        if (objective.optional !== undefined && typeof objective.optional !== 'boolean') {
+          this.addError('objectives', `Objective ${i} field 'optional' must be a boolean`);
         }
       }
     }

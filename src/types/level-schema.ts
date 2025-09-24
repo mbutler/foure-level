@@ -5,6 +5,14 @@
  * and documentation for game engine integration.
  */
 
+export interface LevelObjective {
+  readonly id: string;
+  readonly type: string;
+  readonly description: string;
+  readonly target?: string;
+  readonly optional?: boolean;
+}
+
 /**
  * Complete JSON Schema for FOURE VTT Level Files
  */
@@ -160,9 +168,22 @@ export const LEVEL_SCHEMA = {
     "objectives": {
       "type": "array",
       "description": "Victory conditions and objectives",
-      "items": { "type": "string" },
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "description": { "type": "string" },
+          "target": { "type": "string" },
+          "optional": { "type": "boolean" }
+        }
+      },
       "minItems": 1,
-      "examples": [["Explore the area", "Survive the environment", "Avoid hazards"]]
+      "examples": [[
+        { "id": "explore-area", "type": "explore", "description": "Explore the area" },
+        { "id": "avoid-hazards", "type": "survive", "description": "Avoid hazards", "optional": true }
+      ]]
     },
 
     "settings": {
@@ -267,7 +288,7 @@ export const VALIDATION_RULES = {
     "Recommended level should be between 1-30",
     "Duration should be between 15-300 minutes",
     "At least one spawn point required",
-    "Objectives should be meaningful"
+    "Objectives should include structured data"
   ]
 };
 

@@ -831,9 +831,22 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -843,5 +856,16 @@
     "streets"
   ],
   "difficulty": "medium",
-  "theme": "urban"
+  "theme": "urban",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 77777,
+    "algorithm": "mixed",
+    "compressedSize": 67.52,
+    "generationTime": 1
+  }
 }

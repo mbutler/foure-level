@@ -1,7 +1,7 @@
 {
   "id": "fey-glade",
   "name": "Fey Glade",
-  "description": "Mystical sanctum pulsing with arcane energy.",
+  "description": "A realm where magic bends reality.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 2,
@@ -870,8 +870,16 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    }
   ],
   "tags": [
     "generated",
@@ -881,5 +889,16 @@
     "ritual"
   ],
   "difficulty": "medium",
-  "theme": "mystical"
+  "theme": "mystical",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 99999,
+    "algorithm": "drunkard",
+    "compressedSize": 92.16,
+    "generationTime": 3
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "city-streets",
   "name": "City Streets",
-  "description": "Urban decay where shadows come alive.",
+  "description": "Forgotten district reclaimed by darkness.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 1,
@@ -944,9 +944,22 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -956,5 +969,16 @@
     "streets"
   ],
   "difficulty": "easy",
-  "theme": "urban"
+  "theme": "urban",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 66666,
+    "algorithm": "template",
+    "compressedSize": 60.16,
+    "generationTime": 0
+  }
 }

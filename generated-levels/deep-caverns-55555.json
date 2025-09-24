@@ -1,7 +1,7 @@
 {
   "id": "deep-caverns",
   "name": "Deep Caverns",
-  "description": "Crystal-lit caves with mysterious properties.",
+  "description": "Deep underground caverns with crystal formations.",
   "version": "1.0.0",
   "author": "FOURE Team",
   "recommendedLevel": 3,
@@ -805,10 +805,28 @@
     }
   ],
   "objectives": [
-    "Explore the area",
-    "Survive the environment",
-    "Avoid environmental hazards",
-    "Interact with environmental features"
+    {
+      "id": "explore-area",
+      "type": "explore",
+      "description": "Explore the area"
+    },
+    {
+      "id": "survive-environment",
+      "type": "survive",
+      "description": "Survive the environment"
+    },
+    {
+      "id": "avoid-hazards",
+      "type": "hazard",
+      "description": "Avoid environmental hazards",
+      "optional": true
+    },
+    {
+      "id": "interact-features",
+      "type": "interact",
+      "description": "Interact with environmental features",
+      "optional": true
+    }
   ],
   "tags": [
     "generated",
@@ -818,5 +836,16 @@
     "mining"
   ],
   "difficulty": "medium",
-  "theme": "underground"
+  "theme": "underground",
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  },
+  "metadata": {
+    "seed": 55555,
+    "algorithm": "bsp",
+    "compressedSize": 71.68,
+    "generationTime": 1
+  }
 }
