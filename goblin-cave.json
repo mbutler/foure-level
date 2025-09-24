@@ -1,0 +1,222 @@
+{
+  "id": "goblin-cave",
+  "name": "Goblin Cave",
+  "description": "A dark cave infested with goblins. Perfect for beginning adventurers.",
+  "version": "1.0.0",
+  "author": "FOURE Team",
+  "recommendedLevel": 1,
+  "estimatedDuration": 45,
+  
+  "map": {
+    "dimensions": { "width": 25, "height": 25 },
+    "terrain": [
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"]
+    ],
+    "positions": {},
+    "terrainConfigs": {
+      "empty": {
+        "id": "empty",
+        "name": "Empty",
+        "blocksMovement": false,
+        "blocksLineOfSight": false,
+        "movementCost": 1,
+        "displayGlyph": ".",
+        "description": "Open ground"
+      },
+      "wall": {
+        "id": "wall",
+        "name": "Wall",
+        "blocksMovement": true,
+        "blocksLineOfSight": true,
+        "movementCost": 0,
+        "displayGlyph": "#",
+        "description": "Solid stone wall"
+      },
+      "water": {
+        "id": "water",
+        "name": "Water",
+        "blocksMovement": false,
+        "blocksLineOfSight": false,
+        "movementCost": 2,
+        "displayGlyph": "~",
+        "description": "Shallow water"
+      },
+      "difficult": {
+        "id": "difficult",
+        "name": "Difficult Terrain",
+        "blocksMovement": false,
+        "blocksLineOfSight": false,
+        "movementCost": 2,
+        "displayGlyph": "^",
+        "description": "Rough, difficult terrain"
+      }
+    }
+  },
+  
+  "startingActors": [
+    {
+      "id": "goblin-1",
+      "name": "Goblin Warrior",
+      "class": "Monster",
+      "race": "Goblin",
+      "level": 1,
+      "position": { "x": 5, "y": 3 },
+      "team": "B",
+      "armorClass": 15,
+      "reflex": 14,
+      "will": 10,
+      "fortitude": 12,
+      "initiative": 3,
+      "speed": 6,
+      "abilities": {
+        "strength": 12,
+        "dexterity": 14,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 10,
+        "charisma": 8
+      },
+      "hp": {
+        "current": 20,
+        "max": 20,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "aggressive"
+      }
+    },
+    {
+      "id": "goblin-2",
+      "name": "Goblin Archer",
+      "class": "Monster",
+      "race": "Goblin",
+      "level": 1,
+      "position": { "x": 15, "y": 3 },
+      "team": "B",
+      "armorClass": 14,
+      "reflex": 16,
+      "will": 10,
+      "fortitude": 10,
+      "initiative": 4,
+      "speed": 6,
+      "abilities": {
+        "strength": 10,
+        "dexterity": 16,
+        "constitution": 10,
+        "intelligence": 8,
+        "wisdom": 10,
+        "charisma": 8
+      },
+      "hp": {
+        "current": 18,
+        "max": 18,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "defensive"
+      }
+    },
+    {
+      "id": "goblin-3",
+      "name": "Goblin Shaman",
+      "class": "Monster",
+      "race": "Goblin",
+      "level": 2,
+      "position": { "x": 10, "y": 8 },
+      "team": "B",
+      "armorClass": 13,
+      "reflex": 12,
+      "will": 14,
+      "fortitude": 10,
+      "initiative": 2,
+      "speed": 5,
+      "abilities": {
+        "strength": 8,
+        "dexterity": 12,
+        "constitution": 10,
+        "intelligence": 14,
+        "wisdom": 14,
+        "charisma": 10
+      },
+      "hp": {
+        "current": 25,
+        "max": 25,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "defensive"
+      }
+    }
+  ],
+  
+  "playerSpawnPoints": [
+    { "x": 1, "y": 1 },
+    { "x": 2, "y": 1 },
+    { "x": 1, "y": 2 },
+    { "x": 2, "y": 2 }
+  ],
+  
+  "environmentalEffects": [
+    {
+      "id": "cave-darkness",
+      "name": "Cave Darkness",
+      "type": "lighting",
+      "area": "global",
+      "effects": {
+        "brightness": "dim",
+        "concealment": "partial"
+      },
+      "description": "The cave is dimly lit, providing partial concealment"
+    }
+  ],
+  
+  "objectives": [
+    {
+      "id": "eliminate-goblins",
+      "type": "eliminate",
+      "description": "Defeat all goblins in the cave",
+      "target": "goblin-*",
+      "optional": false
+    },
+    {
+      "id": "survive-encounter",
+      "type": "survive",
+      "description": "Keep all player characters alive",
+      "optional": false
+    }
+  ],
+  
+  "tags": ["cave", "goblins", "beginner", "underground"],
+  "difficulty": "easy",
+  "theme": "dungeon",
+  
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 60,
+    "maxPlayers": 4
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "levels": [
+    {
+      "id": "bandit-hideout",
+      "name": "Bandit Hideout",
+      "description": "A dark cave system teeming with underground creatures.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 75,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": [
+        "generated",
+        "dungeon",
+        "cave",
+        "underground",
+        "exploration"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "ancient-tombs",
+      "name": "Ancient Tombs",
+      "description": "Ancient caverns that have claimed many adventurers.",
+      "recommendedLevel": 3,
+      "estimatedDuration": 105,
+      "difficulty": "medium",
+      "theme": "dungeon",
+      "tags": [
+        "generated",
+        "dungeon",
+        "cave",
+        "underground",
+        "exploration"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "goblin-caves",
+      "name": "Goblin Caves",
+      "description": "A dark cave system teeming with underground creatures.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "dungeon",
+      "tags": [
+        "generated",
+        "dungeon",
+        "cave",
+        "underground",
+        "exploration"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "dragon-lair",
+      "name": "Dragon Lair",
+      "description": "Ancient caverns that have claimed many adventurers.",
+      "recommendedLevel": 5,
+      "estimatedDuration": 135,
+      "difficulty": "hard",
+      "theme": "dungeon",
+      "tags": [
+        "generated",
+        "dungeon",
+        "cave",
+        "underground",
+        "exploration"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "arcane-sanctum",
+      "name": "Arcane Sanctum",
+      "description": "Magical convergence of ancient powers.",
+      "recommendedLevel": 3,
+      "estimatedDuration": 105,
+      "difficulty": "medium",
+      "theme": "mystical",
+      "tags": [
+        "generated",
+        "mystical",
+        "magic",
+        "arcane",
+        "ritual"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "fey-glade",
+      "name": "Fey Glade",
+      "description": "A realm where magic bends reality.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "mystical",
+      "tags": [
+        "generated",
+        "mystical",
+        "magic",
+        "arcane",
+        "ritual"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "lich-tower",
+      "name": "Lich Tower",
+      "description": "Magical convergence of ancient powers.",
+      "recommendedLevel": 4,
+      "estimatedDuration": 120,
+      "difficulty": "hard",
+      "theme": "mystical",
+      "tags": [
+        "generated",
+        "mystical",
+        "magic",
+        "arcane",
+        "ritual"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "crystal-mines",
+      "name": "Crystal Mines",
+      "description": "Crystal-lit caves with mysterious properties.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "underground",
+      "tags": [
+        "generated",
+        "underground",
+        "crystal",
+        "deep",
+        "mining"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "deep-caverns",
+      "name": "Deep Caverns",
+      "description": "Crystal-lit caves with mysterious properties.",
+      "recommendedLevel": 3,
+      "estimatedDuration": 105,
+      "difficulty": "medium",
+      "theme": "underground",
+      "tags": [
+        "generated",
+        "underground",
+        "crystal",
+        "deep",
+        "mining"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "city-streets",
+      "name": "City Streets",
+      "description": "Urban decay where shadows come alive.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 75,
+      "difficulty": "easy",
+      "theme": "urban",
+      "tags": [
+        "generated",
+        "urban",
+        "city",
+        "buildings",
+        "streets"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "abandoned-district",
+      "name": "Abandoned District",
+      "description": "Urban decay where shadows come alive.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "urban",
+      "tags": [
+        "generated",
+        "urban",
+        "city",
+        "buildings",
+        "streets"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "forest-ambush",
+      "name": "Forest Ambush",
+      "description": "Dense forest wilderness with natural hazards.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 75,
+      "difficulty": "easy",
+      "theme": "wilderness",
+      "tags": [
+        "generated",
+        "wilderness",
+        "forest",
+        "outdoor",
+        "nature"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "swamp-ruins",
+      "name": "Swamp Ruins",
+      "description": "Untamed wilds where nature reigns supreme.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "wilderness",
+      "tags": [
+        "generated",
+        "wilderness",
+        "forest",
+        "outdoor",
+        "nature"
+      ],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    }
+  ],
+  "generatedAt": "2025-09-24T02:55:29.812Z",
+  "totalLevels": 13,
+  "metadata": {
+    "generatorVersion": "1.0.0",
+    "formatVersion": "1.0.0",
+    "themes": [
+      "dungeon",
+      "mystical",
+      "underground",
+      "urban",
+      "wilderness"
+    ],
+    "difficulties": [
+      "easy",
+      "hard",
+      "medium"
+    ]
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "id": "bandit-camp",
+  "name": "Bandit Camp",
+  "description": "A wilderness encounter with bandits who have set up camp in the forest.",
+  "version": "1.0.0",
+  "author": "FOURE Team",
+  "recommendedLevel": 2,
+  "estimatedDuration": 60,
+  
+  "map": {
+    "dimensions": { "width": 25, "height": 25 },
+    "terrain": [
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","pit","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","wall","wall","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","wall","wall","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","pit","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","watter","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"],
+      ["difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult","difficult"]
+    ],
+    "positions": {},
+    "terrainConfigs": {
+      "empty": {
+        "id": "empty",
+        "name": "Empty",
+        "blocksMovement": false,
+        "blocksLineOfSight": false,
+        "movementCost": 1,
+        "displayGlyph": " ",
+        "description": "Open ground"
+      },
+      "wall": {
+        "id": "wall",
+        "name": "Wall",
+        "blocksMovement": true,
+        "blocksLineOfSight": true,
+        "movementCost": 0,
+        "displayGlyph": "#",
+        "description": "Solid stone wall"
+      },
+      "pit": {
+        "id": "pit",
+        "name": "Pit!",
+        "blocksMovement": true,
+        "blocksLineOfSight": false,
+        "movementCost": 2,
+        "displayGlyph": "□",
+        "description": "Don't fall in"
+      },
+      "water": {
+        "id": "water",
+        "name": "Water",
+        "blocksMovement": false,
+        "blocksLineOfSight": false,
+        "movementCost": 2,
+        "displayGlyph": "~",
+        "description": "Shallow water"
+      },
+      "difficult": {
+        "id": "difficult",
+        "name": "Difficult Terrain",
+        "blocksMovement": false,
+        "blocksLineOfSight": false,
+        "movementCost": 2,
+        "displayGlyph": "^",
+        "description": "Dense forest undergrowth"
+      }
+    }
+  },
+  
+  "startingActors": [
+    {
+      "id": "bandit-leader",
+      "name": "Bandit Leader",
+      "class": "Monster",
+      "race": "Human",
+      "level": 3,
+      "position": { "x": 12, "y": 10 },
+      "team": "B",
+      "armorClass": 16,
+      "reflex": 14,
+      "will": 12,
+      "fortitude": 15,
+      "initiative": 3,
+      "speed": 6,
+      "abilities": {
+        "strength": 16,
+        "dexterity": 14,
+        "constitution": 14,
+        "intelligence": 10,
+        "wisdom": 12,
+        "charisma": 13
+      },
+      "hp": {
+        "current": 45,
+        "max": 45,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "aggressive"
+      }
+    },
+    {
+      "id": "bandit-1",
+      "name": "Bandit Thug",
+      "class": "Monster",
+      "race": "Human",
+      "level": 2,
+      "position": { "x": 8, "y": 8 },
+      "team": "B",
+      "armorClass": 14,
+      "reflex": 12,
+      "will": 10,
+      "fortitude": 13,
+      "initiative": 2,
+      "speed": 6,
+      "abilities": {
+        "strength": 14,
+        "dexterity": 12,
+        "constitution": 13,
+        "intelligence": 8,
+        "wisdom": 10,
+        "charisma": 9
+      },
+      "hp": {
+        "current": 32,
+        "max": 32,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "aggressive"
+      }
+    },
+    {
+      "id": "bandit-2",
+      "name": "Bandit Archer",
+      "class": "Monster",
+      "race": "Human",
+      "level": 2,
+      "position": { "x": 16, "y": 8 },
+      "team": "B",
+      "armorClass": 13,
+      "reflex": 15,
+      "will": 10,
+      "fortitude": 11,
+      "initiative": 4,
+      "speed": 6,
+      "abilities": {
+        "strength": 10,
+        "dexterity": 15,
+        "constitution": 11,
+        "intelligence": 9,
+        "wisdom": 10,
+        "charisma": 8
+      },
+      "hp": {
+        "current": 28,
+        "max": 28,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "defensive"
+      }
+    },
+    {
+      "id": "bandit-3",
+      "name": "Bandit Scout",
+      "class": "Monster",
+      "race": "Human",
+      "level": 1,
+      "position": { "x": 6, "y": 12 },
+      "team": "B",
+      "armorClass": 12,
+      "reflex": 14,
+      "will": 9,
+      "fortitude": 10,
+      "initiative": 5,
+      "speed": 7,
+      "abilities": {
+        "strength": 9,
+        "dexterity": 14,
+        "constitution": 10,
+        "intelligence": 11,
+        "wisdom": 9,
+        "charisma": 8
+      },
+      "hp": {
+        "current": 22,
+        "max": 22,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "defensive"
+      }
+    }
+  ],
+  
+  "playerSpawnPoints": [
+    { "x": 2, "y": 2 },
+    { "x": 3, "y": 2 },
+    { "x": 2, "y": 3 },
+    { "x": 3, "y": 3 }
+  ],
+  
+  "environmentalEffects": [
+    {
+      "id": "forest-concealment",
+      "name": "Forest Concealment",
+      "type": "zone",
+      "area": [
+        { "x": 0, "y": 0 }, { "x": 1, "y": 0 }, { "x": 2, "y": 0 }, { "x": 3, "y": 0 }, { "x": 4, "y": 0 },
+        { "x": 0, "y": 1 }, { "x": 1, "y": 1 }, { "x": 2, "y": 1 }, { "x": 3, "y": 1 }, { "x": 4, "y": 1 },
+        { "x": 0, "y": 2 }, { "x": 1, "y": 2 }, { "x": 2, "y": 2 }, { "x": 3, "y": 2 }, { "x": 4, "y": 2 },
+        { "x": 0, "y": 3 }, { "x": 1, "y": 3 }, { "x": 2, "y": 3 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 },
+        { "x": 0, "y": 4 }, { "x": 1, "y": 4 }, { "x": 2, "y": 4 }, { "x": 3, "y": 4 }, { "x": 4, "y": 4 }
+      ],
+      "effects": {
+        "concealment": "partial",
+        "movementCost": 2
+      },
+      "description": "Dense forest provides partial concealment and difficult movement"
+    }
+  ],
+  
+  "objectives": [
+    {
+      "id": "eliminate-bandits",
+      "type": "eliminate",
+      "description": "Defeat all bandits in the camp",
+      "target": "bandit-*",
+      "optional": false
+    },
+    {
+      "id": "protect-camp",
+      "type": "protect",
+      "description": "Prevent bandits from escaping with their loot",
+      "optional": true
+    }
+  ],
+  
+  "tags": ["bandits", "forest", "camp", "outdoor"],
+  "difficulty": "medium",
+  "theme": "wilderness",
+  
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 4
+  }
+}

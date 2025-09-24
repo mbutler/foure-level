@@ -1,0 +1,123 @@
+{
+  "id": "example-dungeon-12345",
+  "name": "Bandit Hideout",
+  "description": "A mysterious dungeon complex with hidden dangers.",
+  "version": "1.0.0",
+  "author": "FOURE Level Generator",
+  "recommendedLevel": 1,
+  "estimatedDuration": 75,
+
+  "map": {
+    "dimensions": { "width": 25, "height": 25 },
+    "terrain": [
+      ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+      ["wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall"],
+      ["wall", "empty", "wall", "wall", "wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "empty", "wall"],
+      ["wall", "empty", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall"],
+      ["wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall"],
+      ["wall", "empty", "wall", "wall", "wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall"],
+      ["wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall"],
+      ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "wall", "wall"],
+      ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+      ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+      ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ],
+    "positions": {},
+    "terrainConfigs": {}
+  },
+
+  "startingActors": [
+    {
+      "id": "minion-0",
+      "name": "Minion",
+      "level": 1,
+      "role": "minion",
+      "team": "B",
+      "position": { "x": 2, "y": 10 },
+      "armorClass": 13,
+      "reflex": 11,
+      "will": 11,
+      "fortitude": 11,
+      "initiative": 1,
+      "speed": 6,
+      "abilities": {
+        "strength": 11,
+        "dexterity": 11,
+        "constitution": 11,
+        "intelligence": 8,
+        "wisdom": 8,
+        "charisma": 8
+      },
+      "hp": {
+        "current": 1,
+        "max": 1,
+        "temp": 0
+      },
+      "ai": {
+        "behavior": "aggressive",
+        "preferredRange": "melee",
+        "tactical": ["use_cover"]
+      },
+      "tags": ["monster", "undead", "cave_dweller"]
+    }
+  ],
+
+  "playerSpawnPoints": [
+    { "x": 2, "y": 2 },
+    { "x": 3, "y": 2 },
+    { "x": 2, "y": 3 },
+    { "x": 3, "y": 3 }
+  ],
+
+  "environmentalEffects": [
+    {
+      "id": "cave-darkness",
+      "name": "Cave Darkness",
+      "type": "lighting",
+      "area": "global",
+      "effects": {
+        "brightness": "dim",
+        "concealment": "partial"
+      },
+      "description": "The cave is shrouded in perpetual dimness, providing partial concealment",
+      "theme": "dungeon"
+    }
+  ],
+
+  "objectives": [
+    "Defeat 1 hostile creatures"
+  ],
+
+  "tags": ["generated", "dungeon", "cave", "underground", "exploration"],
+  "difficulty": "easy",
+  "theme": "dungeon",
+
+  "settings": {
+    "allowRespawn": false,
+    "timeLimit": 90,
+    "maxPlayers": 6
+  },
+
+  "metadata": {
+    "seed": 12345,
+    "algorithm": "bsp",
+    "compressedSize": 67.2,
+    "generationTime": 6
+  }
+}
+
+

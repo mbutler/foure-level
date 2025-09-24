@@ -1,0 +1,210 @@
+{
+  "levels": [
+    {
+      "id": "bandit-hideout",
+      "name": "Bandit Hideout",
+      "description": "A mysterious dungeon complex with hidden dangers and tactical combat encounters.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 75,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": ["generated", "dungeon", "bandits", "combat", "bsp"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "goblin-caves",
+      "name": "Goblin Caves",
+      "description": "Ancient caverns that have claimed many adventurers, filled with dangerous creatures.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": ["generated", "dungeon", "cave", "goblins", "cellular"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "ancient-tombs",
+      "name": "Ancient Tombs",
+      "description": "Haunted caverns with undead guardians and magical mysteries to uncover.",
+      "recommendedLevel": 3,
+      "estimatedDuration": 105,
+      "difficulty": "medium",
+      "theme": "dungeon",
+      "tags": ["generated", "dungeon", "undead", "magic", "mixed"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "forest-ambush",
+      "name": "Forest Ambush",
+      "description": "Dense forest wilderness with natural hazards and hidden dangers.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 75,
+      "difficulty": "easy",
+      "theme": "wilderness",
+      "tags": ["generated", "wilderness", "forest", "ambush", "mixed"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "swamp-ruins",
+      "name": "Swamp Ruins",
+      "description": "Forgotten wilderness ruins overgrown with dangerous flora and creatures.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "wilderness",
+      "tags": ["generated", "wilderness", "swamp", "ruins", "template"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "crystal-mines",
+      "name": "Crystal Mines",
+      "description": "Deep underground caverns with crystal formations and mysterious properties.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "underground",
+      "tags": ["generated", "underground", "crystal", "mining", "cellular"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "deep-caverns",
+      "name": "Deep Caverns",
+      "description": "Mysterious subterranean depths hiding ancient secrets and powerful guardians.",
+      "recommendedLevel": 3,
+      "estimatedDuration": 105,
+      "difficulty": "medium",
+      "theme": "underground",
+      "tags": ["generated", "underground", "deep", "secrets", "bsp"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "city-streets",
+      "name": "City Streets",
+      "description": "Dark urban district with lurking dangers and tactical combat opportunities.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 75,
+      "difficulty": "easy",
+      "theme": "urban",
+      "tags": ["generated", "urban", "city", "streets", "template"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "abandoned-district",
+      "name": "Abandoned District",
+      "description": "Cursed urban area reclaimed by darkness with elite threats and rubble fields.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "urban",
+      "tags": ["generated", "urban", "abandoned", "elite", "mixed"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "arcane-sanctum",
+      "name": "Arcane Sanctum",
+      "description": "Cursed mystical sanctum pulsing with arcane energy and magical phenomena.",
+      "recommendedLevel": 3,
+      "estimatedDuration": 105,
+      "difficulty": "medium",
+      "theme": "mystical",
+      "tags": ["generated", "mystical", "arcane", "magic", "mixed"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "fey-glade",
+      "name": "Fey Glade",
+      "description": "Forbidden mystical sanctum where magic bends reality and ancient powers converge.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 90,
+      "difficulty": "medium",
+      "theme": "mystical",
+      "tags": ["generated", "mystical", "fey", "druidic", "drunkard"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "dragon-lair",
+      "name": "Dragon's Lair",
+      "description": "Forbidden caverns containing a deadly dragon and its hoard - for the most experienced adventurers.",
+      "recommendedLevel": 5,
+      "estimatedDuration": 135,
+      "difficulty": "hard",
+      "theme": "dungeon",
+      "tags": ["generated", "dungeon", "dragon", "boss", "epic", "bsp"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "lich-tower",
+      "name": "Lich Tower",
+      "description": "Ancient mystical sanctum where a powerful lich commands undead legions and weaves dark magic.",
+      "recommendedLevel": 4,
+      "estimatedDuration": 120,
+      "difficulty": "hard",
+      "theme": "mystical",
+      "tags": ["generated", "mystical", "lich", "undead", "boss", "mixed"],
+      "author": "FOURE Level Generator",
+      "version": "1.0.0"
+    },
+    {
+      "id": "goblin-cave",
+      "name": "Goblin Cave",
+      "description": "A dark cave infested with goblins. Perfect for beginning adventurers.",
+      "recommendedLevel": 1,
+      "estimatedDuration": 45,
+      "difficulty": "easy",
+      "theme": "dungeon",
+      "tags": ["cave", "goblins", "beginner", "underground"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "bandit-camp",
+      "name": "Bandit Camp",
+      "description": "A wilderness encounter with bandits who have set up camp in the forest.",
+      "recommendedLevel": 2,
+      "estimatedDuration": 60,
+      "difficulty": "medium",
+      "theme": "wilderness",
+      "tags": ["bandits", "forest", "camp", "outdoor"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "haunted-mansion",
+      "name": "Haunted Mansion",
+      "description": "An abandoned mansion filled with undead creatures and dark magic.",
+      "recommendedLevel": 4,
+      "estimatedDuration": 90,
+      "difficulty": "hard",
+      "theme": "dungeon",
+      "tags": ["undead", "mansion", "haunted", "magic"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    },
+    {
+      "id": "dragon-lair-epic",
+      "name": "Dragon's Lair",
+      "description": "The lair of an ancient red dragon. Only for the most experienced adventurers.",
+      "recommendedLevel": 10,
+      "estimatedDuration": 120,
+      "difficulty": "epic",
+      "theme": "dungeon",
+      "tags": ["dragon", "lair", "epic", "treasure"],
+      "author": "FOURE Team",
+      "version": "1.0.0"
+    }
+  ]
+}
+
+
